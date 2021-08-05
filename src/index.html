@@ -39,8 +39,9 @@
         <p>10% wish</p>
       </div>
     </div>
-    <form action="#" class="mortgage-flex">
-      <fieldset>
+    <form action="#">
+      <fieldset class="flex-sp-b">
+        <legend class="f-weight">Income</legend>
         <label for="price">Salary in year</label>
         <input id="price" type="text" placeholder="50000">
         <label for="first-payment">Real-estate</label>
@@ -51,10 +52,24 @@
         <input id="interest-rate" type="text" placeholder="250">
         <button>+</button>
       </fieldset>
-      
+      <fieldset class="flex-sp-b">
+        <legend class="f-weight">Costs</legend>
+        <label for="price">Rent</label>
+        <input id="price" type="text" placeholder="1000">
+        <label for="first-payment">Food</label>
+        <input id="first-payment" type="text" placeholder="500">
+        <label for="years">Health</label>
+        <input id="years" type="text" placeholder="250">
+        <label for="interest-rate">Bills</label>
+        <input id="interest-rate" type="text" placeholder="150">
+        <label for="interest-rate">Wish</label>
+        <input id="interest-rate" type="text" placeholder="500">
+        <button>+</button>
+      </fieldset>
+      <!--Здесь должны выводиться подсчёты, сколько тратим, а сколько экономим. См. шаблон-->
   </form>
     <h2 class="f-weight">Ипотечный калькулятор</h2>
-    <form action="#" class="mortgage-flex">
+    <form action="#" class="flex-sp-a">
         <label for="price">Price</label>
         <input id="price" type="text" placeholder="300000">
         <label for="first-payment">1-st payment, %</label>

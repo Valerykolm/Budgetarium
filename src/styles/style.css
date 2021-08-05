@@ -19,9 +19,25 @@ p {
   padding: 5px;
 }
 
+form {
+  margin: 20px;
+  padding: 20px;
+  background: #B6C9D7;
+  border-radius: 7px;
+}
+
+fieldset {
+  border: none;
+  border-bottom: 1px solid #94A9BD;
+  padding: 0 0 40px;
+  margin: 20px 0;
+  width: 100%;
+}
+
 .conteiner {  
-  width: 1280px;
-  margin: 50px;
+  width: 100%;
+  margin: 0 auto;
+  max-width: 1280px;
 }
 
 .logo {
@@ -44,17 +60,10 @@ p {
   height: 50px;
 }
 
-.mortgage-flex {
-  display: flex;
-  justify-content: space-evenly;
-  margin: 20px;
-  padding: 20px;
-  background: #B6C9D7;
-  border-radius: 7px;
-}
-
 .f-weight {
   font-weight: normal;
   text-align: center;
   margin: 30px
 }
+
+.flex-column
