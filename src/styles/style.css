@@ -19,6 +19,12 @@ p {
   padding: 5px;
 }
 
+a {
+  display: block;
+  text-align: right;
+  margin-right: 22px;
+}
+
 form {
   margin: 20px;
   padding: 20px;

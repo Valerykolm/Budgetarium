@@ -42,43 +42,73 @@
     <form action="#">
       <fieldset class="flex-sp-b">
         <legend class="f-weight">Income</legend>
-        <label for="price">Salary in year</label>
-        <input id="price" type="text" placeholder="50000">
-        <label for="first-payment">Real-estate</label>
-        <input id="first-payment" type="text" placeholder="20000">
-        <label for="years">Stocks</label>
-        <input id="years" type="text" placeholder="250">
-        <label for="interest-rate">Crypto</label>
-        <input id="interest-rate" type="text" placeholder="250">
+        <label for="salary">Salary in year</label>
+        <input id="salary" type="text" placeholder="50000">
+        <label for="real-estate">Real-estate</label>
+        <input id="real-estate" type="text" placeholder="20000">
+        <label for="stocks">Stocks</label>
+        <input id="stocks" type="text" placeholder="250">
+        <label for="crypto">Crypto</label>
+        <input id="crypto" type="text" placeholder="250">
         <button>+</button>
       </fieldset>
       <fieldset class="flex-sp-b">
         <legend class="f-weight">Costs</legend>
-        <label for="price">Rent</label>
-        <input id="price" type="text" placeholder="1000">
-        <label for="first-payment">Food</label>
-        <input id="first-payment" type="text" placeholder="500">
-        <label for="years">Health</label>
-        <input id="years" type="text" placeholder="250">
-        <label for="interest-rate">Bills</label>
-        <input id="interest-rate" type="text" placeholder="150">
-        <label for="interest-rate">Wish</label>
-        <input id="interest-rate" type="text" placeholder="500">
+        <label for="rent">Rent</label>
+        <input id="rent" type="text" placeholder="1000">
+        <label for="food">Food</label>
+        <input id="food" type="text" placeholder="500">
+        <label for="health">Health</label>
+        <input id="health" type="text" placeholder="250">
+        <label for="bills">Bills</label>
+        <input id="bills" type="text" placeholder="150">
+        <label for="wish">Wish</label>
+        <input id="wish" type="text" placeholder="500">
         <button>+</button>
       </fieldset>
       <!--Здесь должны выводиться подсчёты, сколько тратим, а сколько экономим. См. шаблон-->
-  </form>
+    </form>
+    <a href="#">График</a>
+    <h2 class="f-weight">Копить на квартиру</h2>
+    <!--Это примерная форма. Данные должны будут подтягиваться из планера.
+    Заполняется только поле прайс, всё остальное автоматом. См. шаблон-->
+    <form action="#" class="flex-sp-a">
+      <label for="price">Price</label>
+      <input id="price" type="text" placeholder="300000">
+      <label for="title-deed">Title deed, %</label>
+      <input id="title-deed" type="text" placeholder="4">
+      <label for="what-have">How much have</label>
+      <input id="what-have" type="text" placeholder="25000">
+      <label for="what-need">How much need</label>
+      <input id="what-need" type="text" placeholder="175000">
+      <button>Ok</button>
+      <!--Здесь должны выводиться подсчёты, сколько копить на квартиру. См. шаблон-->
+    </form>
+    <h2 class="f-weight">Копить на ипотеку</h2>
+    <!--Это примерная форма. Данные должны будут подтягиваться из планера. См. шаблон-->
+    <form action="#" class="flex-sp-a">
+      <label for="first-payment">First payment</label>
+      <input id="first-payment" type="text" placeholder="60000">
+      <label for="title-deed">Title deed, %</label>
+      <input id="title-deed" type="text" placeholder="4">
+      <label for="what-have">How much have</label>
+      <input id="what-have" type="text" placeholder="25000">
+      <label for="what-need">How much need</label>
+      <input id="what-need" type="text" placeholder="60000">
+      <button>Ok</button>
+      <!--Здесь должны выводиться подсчёты, сколько копить на квартиру. См. шаблон-->
+    </form>
     <h2 class="f-weight">Ипотечный калькулятор</h2>
     <form action="#" class="flex-sp-a">
-        <label for="price">Price</label>
-        <input id="price" type="text" placeholder="300000">
-        <label for="first-payment">1-st payment, %</label>
-        <input id="first-payment" type="text" placeholder="20">
-        <label for="years">Years</label>
-        <input id="years" type="text" placeholder="25">
-        <label for="interest-rate">interest rate, %</label>
-        <input id="interest-rate" type="text" placeholder="2.5">
-        <button>Ok</button>
+      <label for="price">Price</label>
+      <input id="price" type="text" placeholder="300000">
+      <label for="first-payment">1-st payment, %</label>
+      <input id="first-payment" type="text" placeholder="20">
+      <label for="years">Years</label>
+      <input id="years" type="text" placeholder="25">
+      <label for="interest-rate">interest rate, %</label>
+      <input id="interest-rate" type="text" placeholder="2.5">
+      <button>Ok</button>
     </form>
   </div>
 </body>
