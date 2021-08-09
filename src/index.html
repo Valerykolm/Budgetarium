@@ -16,17 +16,17 @@
     </div>
   </div>
   <div class="conteiner">
-    <h1 class="f-weight">Планер расходов</h1>
-    <form action="#" class="d-flex flex-wrap">
+    <h1>Планер расходов</h1>
+    <form action="#" class="flex-wrap-column">
       <fieldset>
         <legend class="f-weight">Income</legend>
-        <label for="salary">Salary</label>
+        <label for="salary">SALARY</label>
         <input id="salary" type="text" placeholder="5000">
-        <label for="real-estate">Real-estate</label>
+        <label for="real-estate">REAL ESTATE</label>
         <input id="real-estate" type="text" placeholder="20000">
-        <label for="stocks">Stocks</label>
+        <label for="stocks">STOCKS</label>
         <input id="stocks" type="text" placeholder="250">
-        <label for="crypto">Crypto</label>
+        <label for="crypto">CRYPTO</label>
         <input id="crypto" type="text" placeholder="250">
         <button>+</button> <!--Здесь появляется всплывашка. См. шаблон-->
       </fieldset>
@@ -41,15 +41,15 @@
       </fieldset>
       <fieldset>
         <legend class="f-weight">Costs</legend>
-        <label for="rent">Rent</label>
+        <label for="rent">RENT</label>
         <input id="rent" type="text" placeholder="1000">
-        <label for="food">Food</label>
+        <label for="food">FOOD</label>
         <input id="food" type="text" placeholder="500">
-        <label for="health">Health</label>
+        <label for="health">HEALTH</label>
         <input id="health" type="text" placeholder="250">
-        <label for="bills">Bills</label>
+        <label for="bills">BILLS</label>
         <input id="bills" type="text" placeholder="150">
-        <label for="wish">Wish</label>
+        <label for="wish">WISH</label>
         <input id="wish" type="text" placeholder="500">
         <button>+</button>
       </fieldset>
@@ -64,52 +64,67 @@
         <legend class="f-weight">How much you can save on your future apartment</legend>
         <label for="price">What price of your future apartment:</label>
         <input id="price" type="text" placeholder="300000">
-        
-        <label for="title-deed">Title deed (4%):</label>
+        <legend>What type of your apartment:</legend>
+        <label>
+          <input type="radio" name="type" value="brand new">
+          Brand new
+        </label>
+        <label>
+          <input type="radio" name="type" value="resale">
+          Resale
+        </label>
+        <!--Если недвижимость новая, то появляется возможность выбора VAT (5 or 15%)-->
+        <legend>This is your first apartment (if yes, VAT - 5%, if no - VAT - 15%):</legend>
+        <label>
+          <input type="radio" name="type" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="type" value="no">
+          No
+        </label>
+        <label for="title-deed">Title deed, 4% (or VAT, 5%):</label>
         <label for="what-have">How much have:</label>
-        <label for="what-need">How much need</label>
+        <label for="what-need">How much need:</label>
       </fieldset>
-    </form>
-    <h2 class="f-weight">Копить на квартиру</h2>
-    <!--Это примерная форма. Данные должны будут подтягиваться из планера.
-    Заполняется только поле прайс, всё остальное автоматом. См. шаблон-->
-    <form action="#" class="flex-sp-a flex-wrap">
-      <label for="price">Price</label>
-      <input id="price" type="text" placeholder="300000">
-      <label for="title-deed">Title deed, %</label>
-      <input id="title-deed" type="text" placeholder="4">
-      <label for="what-have">How much have</label>
-      <input id="what-have" type="text" placeholder="25000">
-      <label for="what-need">How much need</label>
-      <input id="what-need" type="text" placeholder="175000">
-      <button>Ok</button>
-      <!--Здесь должны выводиться подсчёты, сколько копить на квартиру. См. шаблон-->
-    </form>
-    <h2 class="f-weight">Копить на ипотеку</h2>
-    <!--Это примерная форма. Данные должны будут подтягиваться из планера. См. шаблон-->
-    <form action="#" class="flex-sp-a flex-wrap">
-      <label for="first-payment">First payment</label>
-      <input id="first-payment" type="text" placeholder="60000">
-      <label for="title-deed">Title deed, %</label>
-      <input id="title-deed" type="text" placeholder="4">
-      <label for="what-have">How much have</label>
-      <input id="what-have" type="text" placeholder="25000">
-      <label for="what-need">How much need</label>
-      <input id="what-need" type="text" placeholder="60000">
-      <button>Ok</button>
-      <!--Здесь должны выводиться подсчёты, сколько копить на квартиру. См. шаблон-->
-    </form>
-    <h2 class="f-weight">Ипотечный калькулятор</h2>
-    <form action="#" class="flex-sp-a flex-wrap">
-      <label for="price">Price</label>
-      <input id="price" type="text" placeholder="300000">
-      <label for="first-payment">1-st payment, %</label>
-      <input id="first-payment" type="text" placeholder="20">
-      <label for="years">Years</label>
-      <input id="years" type="text" placeholder="25">
-      <label for="interest-rate">interest rate, %</label>
-      <input id="interest-rate" type="text" placeholder="2.5">
-      <button>Ok</button>
+      <fieldset>
+        <legend class="f-weight">How much you can save on your first payment for mortage</legend>
+        <label for="price">First payment:</label>
+        <legend>What type of your apartment:</legend>
+        <label>
+          <input type="radio" name="type" value="brand new">
+          Brand new
+        </label>
+        <label>
+          <input type="radio" name="type" value="resale">
+          Resale
+        </label>
+        <!--Если недвижимость новая, то появляется возможность выбора VAT (5 or 15%)-->
+        <legend>This is your first apartment (if yes, VAT - 5%, if no - VAT - 15%):</legend>
+        <label>
+          <input type="radio" name="type" value="yes">
+          Yes
+        </label>
+        <label>
+          <input type="radio" name="type" value="no">
+          No
+        </label>
+        <label for="title-deed">Title deed, 4% (or VAT, 5%):</label>
+        <label for="what-have">How much have:</label>
+        <label for="what-need">How much need:</label>
+      </fieldset>
+      <fieldset>
+        <legend class="f-weight">Mortgage calculation</legend>
+        <label for="price">PRICE</label>
+        <input id="price" type="text" placeholder="300000">
+        <label for="first-payment">FIRST PAYMENT, %</label>
+        <input id="first-payment" type="text" placeholder="20">
+        <label for="years">YEARS</label>
+        <input id="years" type="text" placeholder="25">
+        <label for="interest-rate">INTEREST RATE, %</label>
+        <input id="interest-rate" type="text" placeholder="2.5">
+        <button>Ok</button>
+      </fieldset>
     </form>
   </div>
 </body>
