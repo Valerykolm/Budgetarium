@@ -26,10 +26,11 @@ a {
 }
 
 form {
-  margin: 20px;
+  margin: 0 auto;
   padding: 20px;
-  background: #B6C9D7;
+  background:#D8E3EB;
   border-radius: 7px;
+  max-width: 1044px;
 }
 
 fieldset {
@@ -38,16 +39,24 @@ fieldset {
   padding: 0 0 40px;
   margin: 20px 0;
   width: 100%;
+  display: flex;
+  flex-direction: column;
 }
 
 .conteiner {  
   width: 100%;
   margin: 0 auto;
   max-width: 1280px;
+  display: flex;
+  flex-direction: column;
 }
 
 .logo {
   font-size: 25px;
+}
+
+.d-flex {
+  display: flex;
 }
 
 .flex-sp-b {
@@ -61,6 +70,14 @@ fieldset {
   justify-content: space-around;
 }
 
+.flex-wrap {
+  flex-wrap: wrap;
+}
+
+.flex-aside {
+  flex: 75 2 300px;
+}
+
 .i-size {
   width: 50px;
   height: 50px;
@@ -72,4 +89,3 @@ fieldset {
   margin: 30px
 }
 
-.flex-column

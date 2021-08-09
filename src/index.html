@@ -9,50 +9,37 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
+  <div class="flex-sp-b">
+    <div class="logo">Budgetarium</div>
+    <div class="login">
+      <a href="#">Sign up | Log in</a>
+    </div>
+  </div>
   <div class="conteiner">
-    <div class="flex-sp-b">
-      <div class="logo">Budgetarium</div>
-      <div class="login">
-        <a href="#">Sign up | Log in</a>
-      </div>
-    </div>
     <h1 class="f-weight">Планер расходов</h1>
-    <div class="flex-sp-a">
-      <div class="flex-sp-b i-size">
-        <img src="img/real-estate.png" alt="rent">
-        <p>25% rent</p>
-      </div>
-      <div class="flex-sp-b i-size">
-        <img src="img/food.png" alt="food">
-        <p>10% food</p>
-      </div>
-      <div class="flex-sp-b i-size">
-        <img src="img/health.png" alt="health">
-        <p>5% health</p>
-      </div>
-      <div class="flex-sp-b i-size">
-        <img src="img/utilities.png" alt="utilities">
-        <p>3% bills</p>
-      </div>
-      <div class="flex-sp-b i-size">
-        <img src="img/enterteinment.png" alt="enterteinment">
-        <p>10% wish</p>
-      </div>
-    </div>
-    <form action="#">
-      <fieldset class="flex-sp-b">
+    <form action="#" class="d-flex flex-wrap">
+      <fieldset>
         <legend class="f-weight">Income</legend>
-        <label for="salary">Salary in year</label>
-        <input id="salary" type="text" placeholder="50000">
+        <label for="salary">Salary</label>
+        <input id="salary" type="text" placeholder="5000">
         <label for="real-estate">Real-estate</label>
         <input id="real-estate" type="text" placeholder="20000">
         <label for="stocks">Stocks</label>
         <input id="stocks" type="text" placeholder="250">
         <label for="crypto">Crypto</label>
         <input id="crypto" type="text" placeholder="250">
-        <button>+</button>
+        <button>+</button> <!--Здесь появляется всплывашка. См. шаблон-->
       </fieldset>
-      <fieldset class="flex-sp-b">
+      <fieldset>
+        <legend class="f-weight">How much should you spent</legend>
+        <!--Здесь появляются расчёты, сколько рекомендовано тратить-->
+        <label for="rent">Rent (25%):</label>
+        <label for="food">Food (10%)</label>
+        <label for="health">Health (5%):</label>
+        <label for="bills">Bills (3%):</label>
+        <label for="wish">Wish (10%)</label>
+      </fieldset>
+      <fieldset>
         <legend class="f-weight">Costs</legend>
         <label for="rent">Rent</label>
         <input id="rent" type="text" placeholder="1000">
@@ -67,12 +54,26 @@
         <button>+</button>
       </fieldset>
       <!--Здесь должны выводиться подсчёты, сколько тратим, а сколько экономим. См. шаблон-->
+      <fieldset>
+        <legend class="f-weight">How much you spent and save</legend>
+        <label for="rent">How much spent in month:</label>
+        <label for="food">How much save in month:</label>
+        <label for="health">How much save in year:</label>
+      </fieldset>
+      <fieldset>
+        <legend class="f-weight">How much you can save on your future apartment</legend>
+        <label for="price">What price of your future apartment:</label>
+        <input id="price" type="text" placeholder="300000">
+        
+        <label for="title-deed">Title deed (4%):</label>
+        <label for="what-have">How much have:</label>
+        <label for="what-need">How much need</label>
+      </fieldset>
     </form>
-    <a href="#">График</a>
     <h2 class="f-weight">Копить на квартиру</h2>
     <!--Это примерная форма. Данные должны будут подтягиваться из планера.
     Заполняется только поле прайс, всё остальное автоматом. См. шаблон-->
-    <form action="#" class="flex-sp-a">
+    <form action="#" class="flex-sp-a flex-wrap">
       <label for="price">Price</label>
       <input id="price" type="text" placeholder="300000">
       <label for="title-deed">Title deed, %</label>
@@ -86,7 +87,7 @@
     </form>
     <h2 class="f-weight">Копить на ипотеку</h2>
     <!--Это примерная форма. Данные должны будут подтягиваться из планера. См. шаблон-->
-    <form action="#" class="flex-sp-a">
+    <form action="#" class="flex-sp-a flex-wrap">
       <label for="first-payment">First payment</label>
       <input id="first-payment" type="text" placeholder="60000">
       <label for="title-deed">Title deed, %</label>
@@ -99,7 +100,7 @@
       <!--Здесь должны выводиться подсчёты, сколько копить на квартиру. См. шаблон-->
     </form>
     <h2 class="f-weight">Ипотечный калькулятор</h2>
-    <form action="#" class="flex-sp-a">
+    <form action="#" class="flex-sp-a flex-wrap">
       <label for="price">Price</label>
       <input id="price" type="text" placeholder="300000">
       <label for="first-payment">1-st payment, %</label>
